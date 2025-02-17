@@ -1,22 +1,26 @@
 ---
 title: 11ty Boilerplate
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>{{ title }}</title>
+
   <link rel="stylesheet" href="/styles/screen.css">
+
+  <!-- Font (Inter from Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h4>Polaroid Cloud</h4>
+  </header>
+  <main>
     {{ content }}
+  </main>
 </body>
 </html>
